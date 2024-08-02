@@ -1,0 +1,316 @@
+:root {
+    --freeze-0: #FFFFFF;
+    --freeze-25: #FCFCFC;
+    --freeze-50: #F8F8F8;
+    --freeze-100: #F4F4F4;
+    --freeze-200: #E8E8E8;
+    --freeze-300: #DFDFDF;
+    --freeze-400: #A6A8AB;
+    --freeze-500: #6A6E75;
+    --freeze-600: #53565C;
+    --freeze-700: #252629;
+    --freeze-800: #191A1C;
+    --freeze-900: #0F1011;
+
+    --blue-500: #2E90FA;
+
+    --letter-spacing-negative-md: -0.02em;
+    --letter-spacing-negative-sm: -0.015em;
+    --letter-spacing-negative-xs: -0.01em;
+    --letter-spacing-none: 0;
+    --letter-spacing-positive-xs: 0.01em;
+    --letter-spacing-positive-sm: 0.015em;
+    --letter-spacing-positive-md: 0.02em;
+    
+    --elevation-sm: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
+/** Headline Styles **/
+.headline-2xl {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: var(--letter-spacing-negative-sm);
+    font-variation-settings: "wght" 600;
+}
+
+.headline-xl {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: var(--letter-spacing-negative-sm);
+    font-variation-settings: "wght" 600;
+}
+
+.headline-lg {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: var(--letter-spacing-negative-xs);
+    font-variation-settings: "wght" 600;
+}
+
+.headline-md {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: var(--letter-spacing-negative-xs);
+    font-variation-settings: "wght" 600;
+}
+
+.headline-sm {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: var(--letter-spacing-negative-xs);
+    font-variation-settings: "wght" 600;
+}
+
+.headline-xs {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: var(--letter-spacing-none);
+    font-variation-settings: "wght" 600;
+}
+
+/** Body Styles **/
+.bold {
+    font-variation-settings: "wght" 600;
+}
+
+.medium {
+    font-variation-settings: "wght" 525;
+}
+
+.regular {
+    font-variation-settings: "wght" 450;
+}
+
+.body-xl {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: var(--letter-spacing-none);
+}
+
+.body-lg {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: var(--letter-spacing-none);
+}
+
+.body-md {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: var(--letter-spacing-none);
+}
+
+.body-sm {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: var(--letter-spacing-none);
+}
+
+.body-xs {
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: var(--letter-spacing-none);
+}
+
+.button-sm {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: var(--letter-spacing-none);
+    font-variation-settings: "wght" 550 !important;
+}
+
+.button-md {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: var(--letter-spacing-none);
+    font-variation-settings: "wght" 550 !important;
+}
+
+body {
+    background-color: var(--freeze-100);
+    color: var(--freeze-700);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--freeze-100);
+}
+
+.container {
+    width: 400px;
+    max-width: 100%;
+    margin: 20px;
+    box-shadow: var(--elevation-sm);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--freeze-0);
+    border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.header, .content {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+.header h3 {
+    margin-top: 32px;
+}
+
+.content {
+    /**border-top: 1px solid var(--freeze-200);**/
+    padding: 0px 24px 24px 24px;
+}
+
+.personal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.inner-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-text-container h2 {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.inner-text-container p {
+    margin: 0;
+    color: var(--freeze-500);
+}
+
+.career-container {
+    background-color: var(--freeze-100);
+    border-radius: 12px;
+}
+
+.latest-career, .previous-career {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.previous-career {
+    border-top: 1px solid var(--freeze-200);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description h4 {
+    margin: 0;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.description a,
+.description span {
+    margin: 0;
+    text-align: left;
+    color: var(--freeze-500);
+}
+
+.badge {
+    padding: 6px 8px;
+    background-color: var(--freeze-900);
+    color: var(--freeze-0);
+    border-radius: 1000px;
+}
+
+.badge-outline {
+    padding: 4px 6px;
+    border: 1px solid var(--freeze-900);
+    color: var(--freeze-700);
+    border-radius: 1000px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.button-container a {
+    flex: 1;
+    margin-right: 10px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: var(--letter-spacing-none);
+    font-variation-settings: "wght" 550;
+    text-decoration: none;
+}
+
+.button-container a:last-child {
+    margin-right: 0;
+}
+
+.linkedin {
+    background-color: #0A66C2;
+    color: var(--freeze-0);
+}
+
+.linkedin:hover {
+    background-color: #0a58a6;
+    color: var(--freeze-0);
+}
+
+.xing {
+    background-color: #C6F16D;
+    color: var(--freeze700);
+}
+
+.xing:hover {
+    background-color: #b1d961;
+    color: var(--freeze-700);
+}
+
+.description a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.description a:hover {
+    color: var(--blue-500);
+}
